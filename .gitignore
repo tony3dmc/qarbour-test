@@ -1,0 +1,4 @@
+/srv/vendor/
+.env
+__pycache__/
+*.sqlite
