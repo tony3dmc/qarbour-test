@@ -1,28 +1,28 @@
-= QArbour
+# QArbour
 
 Welcome to QArbour, a mock Harbour system for the purpose of learning automated testing in a simple environment, while waiting for the Nexus transformation project to complete.
 
-== Install
+## Install
 
-=== Linux
+### Linux
 
 * Install git and docker from your repos
 * Open a terminal
 
-=== Windows
+### Windows
 
 * Download Git for Windows
 * Download Docker Desktop
 * Run Git Bash from your start menu
 
-== Everyone
+## Everyone
 
 * git clone https://github.com/tony3dmc/qarbour-test.git
 * cd qarbour-test
 * docker-compose up -d
 * docker-compose run test-runner pytest tests
 
-== How to do tests
+## How to do tests
 
 Check out the files in the tests/ folder, make a file for each thing you want to test, write functions for each way you want to test it.
 
