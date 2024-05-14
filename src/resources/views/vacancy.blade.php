@@ -35,7 +35,7 @@
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Aperture Science Cake Division</a>
+        <a class="navbar-brand" href="/">Aperture Science Cake Division</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,21 +54,13 @@
     </nav>
 
     <div class="container">
-        <h1>Vacancies</h1>
-        <p>At the forefront of culinary and scientific innovation, the Aperture Science Cake Division is where baking meets quantum physics to unlock the secrets of the perfect cake. Join us, and be part of a team that's shaping the future of gastronomy.</p>
+        <h1>Vacancy - {{ str_replace('_', ' ', Str::title($vacancy)) }}</h1>
 
-        <div class="vacancy">
-            <h2 class="vacancy-title"><a href="/vacancy/portal_cake_designer">Portal Cake Designer</a></h2>
-            <p>As a Portal Cake Designer, you'll work within the boundaries of space-time to create cakes that redefine the meaning of 'instant delivery'. Ideal candidates will have experience in molecular gastronomy and a strong desire to challenge the conventional limits of cake design.</p>
-        </div>
-        <div class="vacancy">
-            <h2 class="vacancy-title">Quantum Confectionery Physicist</h2>
-            <p>Join our team as a Quantum Confectionery Physicist to explore the superposition of flavors that exist in multiple states simultaneously. This role requires a deep understanding of quantum mechanics and a passion for chocolate. Your work will lay the foundation for our next-generation dessert technologies.</p>
-        </div>
-        <div class="vacancy">
-            <h2 class="vacancy-title">Experimental Baking Technician</h2>
-            <p>The Experimental Baking Technician is on the cutting edge, literally slicing through the fabric of reality to bring forth baked goods the likes of which have never been seen. If you have hands-on experience with experimental baking techniques and a portfolio of impossible pastries, we want you.</p>
-        </div>
+        <p>As a Portal Cake Designer, you'll work within the boundaries of space-time to create cakes that redefine the meaning of 'instant delivery'. Ideal candidates will have experience in molecular gastronomy and a strong desire to challenge the conventional limits of cake design.</p>
+        <p>Benefits include a competitive salary, access to cutting-edge technology, and the opportunity to work alongside some of the brightest minds in the industry.</p>
+        <p>Apply now and take the first step towards a career that's out of this world!</p>
+
+        <button type="button" class="btn btn-primary apply">Apply Now</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>

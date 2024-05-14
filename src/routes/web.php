@@ -9,3 +9,7 @@ Route::get('/', function () {
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+
+Route::get('/vacancy/{vacancy}', function ($vacancy) {
+    return view('vacancy', ['vacancy' => $vacancy]);
+})->name('vacancy');
